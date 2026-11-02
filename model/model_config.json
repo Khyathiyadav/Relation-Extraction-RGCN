@@ -1,0 +1,23 @@
+{
+    "model": "Enhanced R-GCN",
+    "bert_model": "bert-base-uncased",
+    "bert_frozen": true,
+    "bert_dimension": 768,
+    "pos_embedding_dimension": 32,
+    "input_dimension": 800,
+    "hidden_dimension": 256,
+    "num_rgcn_layers": 2,
+    "num_relations": 89,
+    "num_classes": 19,
+    "dropout": 0.3,
+    "pair_representation": [
+        "entity_1",
+        "entity_2",
+        "absolute_difference",
+        "elementwise_product"
+    ],
+    "classifier_input_dimension": 1024,
+    "best_epoch": 14,
+    "test_accuracy": 0.8178137651821862,
+    "test_macro_f1": 0.785280374159867
+}
